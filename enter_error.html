@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Code Management</title>
+    <link rel="stylesheet" href="../CSS/enter_error.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <div class="container">
+                <a href="#" class="logo">ErrorManager</a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn-login">Login</a>
+            </div>
+        </header>
+
+        <div class="container">
+            <aside class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#" data-target="addErrorForm">Add Error Code</a></li>
+                    <li><a href="#" data-target="editErrorForm">Edit Error Code</a></li>
+                    <li><a href="#" data-target="deleteErrorForm">Delete Error Code</a></li>
+                    <li><a href="#" data-target="searchErrorForm">Search Error Code</a></li>
+                    <li><a href="#" data-target="displayErrorCodes">Display Error Codes</a></li>
+                </ul>
+            </aside>
+
+            <main class="content">
+                <section class="hero">
+                    <h1>Error Code Management</h1>
+                    <p>Manage your error codes efficiently with the options below.</p>
+                </section>
+
+                <!-- Form Sections -->
+                <div class="form-container" id="addErrorForm">
+                    <h2>Add Error Code</h2>
+                    <form id="errorForm">
+                        <label for="brand">Brand</label>
+                        <input type="text" id="brand" name="brand" placeholder="Enter brand" required>
+
+                        <label for="error_code">Error Code</label>
+                        <input type="text" id="error_code" name="error_code" placeholder="Enter error code" required>
+
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Enter description" required></textarea>
+
+                        <button type="submit">Add Error Code</button>
+                    </form>
+                    <div id="errorDisplay" class="error-display"></div>
+                </div>
+
+                <div class="form-container" id="editErrorForm">
+                    <h2>Edit Error Code</h2>
+                    <form id="editForm">
+                        <label for="editCode">Error Code</label>
+                        <input type="text" id="editCode" name="editCode" placeholder="Enter error code to edit" required>
+
+                        <label for="editDescription">New Description</label>
+                        <textarea id="editDescription" name="editDescription" rows="4" placeholder="Enter new description" required></textarea>
+
+                        <button type="submit">Update Error Code</button>
+                    </form>
+                    <div id="editDisplay" class="error-display"></div>
+                </div>
+
+                <div class="form-container" id="deleteErrorForm">
+                    <h2>Delete Error Code</h2>
+                    <form id="deleteForm">
+                        <label for="deleteCode">Error Code</label>
+                        <input type="text" id="deleteCode" name="deleteCode" placeholder="Enter error code to delete" required>
+
+                        <button type="submit">Delete Error Code</button>
+                    </form>
+                    <div id="deleteDisplay" class="error-display"></div>
+                </div>
+
+                <div class="form-container" id="searchErrorForm">
+                    <h2>Search Error Code</h2>
+                    <form id="searchForm">
+                        <label for="searchCode">Error Code</label>
+                        <input type="text" id="searchCode" name="searchCode" placeholder="Enter error code to search" required>
+
+                        <button type="submit">Search Error Code</button>
+                    </form>
+                    <div id="searchDisplay" class="error-display"></div>
+                </div>
+
+                <div class="form-container" id="displayErrorCodes">
+                    <h2>All Error Codes</h2>
+                    <div id="displayList" class="error-display"></div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 ErrorManager. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="..\JS\enter_error.js"></script>
+</body>
+</html>

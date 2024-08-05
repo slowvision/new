@@ -1,0 +1,238 @@
+/* General body styling */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background for body */
+    color: #e0e0e0; /* Light text color for readability */
+}
+
+/* Header styling */
+.header {
+    background-color: #1f1f1f; /* Darker background for header */
+    color: #e0e0e0;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    background-color: #007bff; /* Accent color for login button */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    background-color: #0056b3; /* Slightly darker on hover */
+}
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    background: url('../JPG/home.jpg') no-repeat center center/cover;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay for better contrast */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #1f1f1f; /* Dark button background */
+    color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #333; /* Slightly lighter on hover */
+}
+
+/* Tasks section styling */
+.tasks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.task-card {
+    background: #1e1e1e; /* Dark background for task cards */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.task-card h3 {
+    margin-top: 0;
+    color: #e0e0e0; /* Light text color for headers */
+}
+
+.task-card p {
+    margin: 15px 0;
+    color: #b0b0b0; /* Slightly lighter text color for paragraphs */
+}
+
+.task-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* Dark button background */
+    color: #e0e0e0;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.task-card .btn:hover {
+    background-color: #444; /* Slightly lighter on hover */
+}
+
+@media (max-width: 768px) {
+    .tasks {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Footer styling */
+.footer {
+    background-color: #1f1f1f; /* Dark background for footer */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content a {
+    color: #007bff; /* Accent color for links */
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styling */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1e1e1e; /* Dark background for form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0e0e0; /* Light text color for labels */
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 4px;
+    background: #121212; /* Dark background for inputs */
+    color: #e0e0e0; /* Light text color for inputs */
+}
+
+.contact form button {
+    background-color: #007bff; /* Accent color for button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #0056b3; /* Slightly darker on hover */
+}

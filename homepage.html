@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AC Error Codes provides detailed information on troubleshooting air conditioning errors, maintenance tips, and support.">
+    <title>AC Error Codes - Homepage</title>
+    <link rel="stylesheet" href="..\CSS\styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <a href="#" class="logo">AC Error Codes</a>
+            <ul>
+                <li><a href="enter_error.html">Error Codes</a></li>
+                <li><a href="#tips">Tips & Tricks</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="login.html" class="btn btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="homepage">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to AC Error Codes</h1>
+                <p>Your go-to resource for troubleshooting air conditioning errors. Explore our detailed error codes, maintenance tips, and get in touch with support.</p>
+                <a href="enter_error.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </section>
+
+        <section id="tasks" class="tasks">
+            <div class="task-card">
+                <h3>Error Codes</h3>
+                <p>Find detailed information on common AC error codes to help troubleshoot your air conditioning unit.</p>
+                <a href="enter_error.html" class="btn">View Error Codes</a>
+            </div>
+            <div class="task-card">
+                <h3>Tips & Tricks</h3>
+                <p>Discover useful tips and tricks to maintain your AC unit and ensure optimal performance.</p>
+                <a href="tips.html" class="btn">Read Tips & Tricks</a>
+            </div>
+            <div class="task-card">
+                <h3>Contact Us</h3>
+                <p>Need more help? Reach out to our support team for assistance with your AC unit.</p>
+                <a href="contact.html" class="btn">Contact Support</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 AC Error Codes. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="..\JS\script.js"></script>
+</body>
+</html>
